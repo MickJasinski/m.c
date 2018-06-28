@@ -1,0 +1,40 @@
+*
+    margin: 0
+    padding: 0
+
+header 
+    position: fixed
+    z-index: 1000
+
+.home 
+    background-image: url("../imgs/city.jpg")
+    background-size: cover
+    background-position: center
+    hight: 100vh
+
+#logo-svg 
+    position: absolute
+    top: 45%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 60%
+    path 
+        stroke: white
+        fill: none
+        stroke-dasharray: 1800
+        opacity: 10
+        animation: draw 5s cubic-bezier(0,0.15,1,.1)
+
+
+@keyframes draw 
+    0% 
+        opacity: 0
+        fill: none
+        stroke-dashoffset: 1800
+
+    10% 
+        opacity: 10
+        stroke-dashoffset: 1800
+
+    100%
+        stroke-dashoffset: 0
