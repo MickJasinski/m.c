@@ -2,15 +2,24 @@
     margin: 0
     padding: 0
 
-header 
-    position: fixed
-    z-index: 1000
+.screen 
+    height: 100vh
 
-.home 
-    background-image: url("../imgs/city.jpg")
+
+
+// header 
+//     position: fixed
+//     z-index: 1000
+
+#space 
+    background-image: url("../imgs/space.jpg")
+    background-color: black
     background-size: cover
     background-position: center
     hight: 100vh
+    opacity: 1
+    transition: opacity 2s ease-in
+
 
 #logo-svg 
     position: absolute
@@ -23,7 +32,7 @@ header
         fill: none
         stroke-dasharray: 1800
         opacity: 10
-        animation: draw 5s cubic-bezier(0,0.15,1,.1)
+        animation: draw 15s cubic-bezier(0,0.15,1,.1)
 
 
 @keyframes draw 
@@ -38,3 +47,26 @@ header
 
     100%
         stroke-dashoffset: 0
+
+
+.screen-I 
+    background-color: #ce1a4a
+
+.screen-II 
+    background-color: #62c167
+
+.screen-III 
+    background-color: #c4b22b
+
+.foot-screen 
+    background-color: white
+
+.foot 
+    position: relative
+    bottom: -50vh
+    width: 100%
+    height: 50vh
+    background-color: #444
+    z-index: 100
+
+
